@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AlterEgo>
+  <Player>
+    <State>AlterEgoLight</State>
+    <CurrentHealth>50</CurrentHealth>
+    <MaxHealth>50</MaxHealth>
+    <CurrentDefense>50</CurrentDefense>
+    <MaxDefense>50</MaxDefense>
+    <CurrentPower>50</CurrentPower>
+    <MaxPower>50</MaxPower>
+    <IsAlive>1</IsAlive>
+    <Inventory>
+      <Item>
+        <Name>Alter Cross</Name>
+        <DestroyOnUse>1</DestroyOnUse>
+        <Power>Change Realms</Power>
+      </Item>
+      <Item>
+        <Name>Health Potion</Name>
+        <DestroyOnUse>1</DestroyOnUse>
+        <Power>Heal Player</Power>
+      </Item>
+    </Inventory>
+  </Player>
+  <Enemy>
+    <CurrentHealth>50</CurrentHealth>
+    <MaxHealth>50</MaxHealth>
+    <CurrentDefense>50</CurrentDefense>
+    <MaxDefense>50</MaxDefense>
+    <CurrentPower>50</CurrentPower>
+    <MaxPower>50</MaxPower>
+    <IsAlive>1</IsAlive>
+  </Enemy>
+</AlterEgo>
+
+
+

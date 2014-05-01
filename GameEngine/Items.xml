@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ItemCollection>
+  <AllItems>
+  <Item>
+    <Name>Alter Cross</Name>
+    <DestroyOnUse>1</DestroyOnUse>
+    <Power>Change Realms</Power>
+  </Item>
+  <Item>
+    <Name>Health Potion</Name>
+    <DestroyOnUse>1</DestroyOnUse>
+    <Power>Heal Player</Power>
+  </Item>
+  <Item>
+    <Name>Flash Light</Name>
+    <DestroyOnUse>0</DestroyOnUse>
+    <Power>Illuminate Area</Power>
+  </Item>
+</AllItems>
+</ItemCollection>

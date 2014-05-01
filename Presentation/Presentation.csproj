@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C2725C2-F3CC-480F-BA52-4306AA42A513}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Presentation</RootNamespace>
+    <AssemblyName>Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <!--
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\Main.cs" />
+    <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Standard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
+    <Compile Include="Assets\Standard Assets\Water %28Basic%29\Sources\Scripts\WaterSimple.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  -->
+  <ItemGroup>
+    <None Include="Assets\Standard Assets %28Mobile%29\Control Setups\CameraRelativeSetup.unity" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Control Setups\FirstPersonSetup.unity" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Control Setups\FirstPersonTilt.unity" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Control Setups\PlayerRelativeSetup.unity" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Control Setups\SidescrollSetup.unity" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Control Setups\TapControlSetup.unity" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Materials\grid.mat" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Materials\gridFor2D.mat" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Materials\skybox.mat" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Prefabs\2D Side Scroller.prefab" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Prefabs\Camera Relative Controls.prefab" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Prefabs\Dual Joysticks.prefab" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Prefabs\Dual TouchPads.prefab" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Prefabs\First Person Controls.prefab" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Prefabs\First Person Tilt Controls.prefab" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Prefabs\Player Relative Controls.prefab" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Prefabs\Roll A Ball.prefab" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Prefabs\Single Joystick.prefab" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Prefabs\Single TouchPad.prefab" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Prefabs\Skybox.fbx" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Prefabs\TapToMove Controls.prefab" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Shaders\Lightmap Shaders %28Legacy%29\Mobile Lightmap AlphaTest.shader" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Shaders\Lightmap Shaders %28Legacy%29\Mobile Lightmap Only.shader" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Shaders\Lightmap Shaders %28Legacy%29\Mobile Lightmap Reflective.shader" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Textures\grid.psd" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Textures\JoystickThumb.psd" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Textures\skyBox.tga" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Textures\ThumbAreaLeft.psd" />
+    <None Include="Assets\Standard Assets %28Mobile%29\Textures\ThumbAreaRight.psd" />
+    <None Include="Assets\Standard Assets\Character Controllers\3rd Person Controller.prefab" />
+    <None Include="Assets\Standard Assets\Character Controllers\First Person Controller.prefab" />
+    <None Include="Assets\Standard Assets\Character Controllers\Sources\PrototypeCharacter\Constructor.FBX" />
+    <None Include="Assets\Standard Assets\Character Controllers\Sources\PrototypeCharacter\Materials\constructor_done.mat" />
+    <None Include="Assets\Standard Assets\Light Cookies\Hard.psd" />
+    <None Include="Assets\Standard Assets\Light Cookies\square.psd" />
+    <None Include="Assets\Standard Assets\Light Flares\50mm Zoom.flare" />
+    <None Include="Assets\Standard Assets\Light Flares\Small Flare.flare" />
+    <None Include="Assets\Standard Assets\Light Flares\Sources\Materials\flare mat.mat" />
+    <None Include="Assets\Standard Assets\Light Flares\Sources\Textures\50mmflare.psd" />
+    <None Include="Assets\Standard Assets\Light Flares\Sources\Textures\starflare.psd" />
+    <None Include="Assets\Standard Assets\Light Flares\Sun.flare" />
+    <None Include="Assets\Standard Assets\Particles\Dust\Dust Storm.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Fire\Fire1.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Fire\Flame.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Legacy Particles\explosion.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Legacy Particles\large flames.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Legacy Particles\Small explosion.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Legacy Particles\small flames.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Legacy Particles\Sparks.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Misc\Fireworks.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Misc\Light Snow.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Misc\Soap Bubbles.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Misc\Sparks.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Smoke\Detailed Smoke.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Smoke\Fluffy Smoke Large.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Smoke\Fluffy Smoke.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Smoke\Smoke Trail.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Animations\Light explosion.anim" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Animations\Stop Emitting ,5 sec.anim" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Animations\Stop Emitting 1 sec.anim" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Animations\Stop Emitting 2 sec.anim" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Dust Material 1.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Fairy Dust.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Fire Add.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Fire Smoke.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\FlameA.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\FlameB.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\FlameC.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\FlameD.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\FlameE.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Poof1.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Smoke Trail.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Smoke.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Smoke1.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Smoke2.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Smoke3.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Smoke4.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Snowflake.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\SoapBubble.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Spark.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Sparkles1.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Sparkles2.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Water Splash1.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Materials\Water Splash2.mat" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend %28Queue +100%29.shader" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Textures\DustPoof.psd" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Textures\fire3.psd" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Textures\fire4.psd" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Textures\Fireball.psd" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Textures\foam.tga" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Textures\smokepuff1.psd" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Textures\smoketest2.psd" />
+    <None Include="Assets\Standard Assets\Particles\Sparkles\Sparkle Rising.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Water\Water Fountain.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Water\Water Surface Splash.prefab" />
+    <None Include="Assets\Standard Assets\Particles\Water\WaterFall.prefab" />
+    <None Include="Assets\Standard Assets\Physic Materials\Bouncy.physicmaterial" />
+    <None Include="Assets\Standard Assets\Physic Materials\Ice.physicmaterial" />
+    <None Include="Assets\Standard Assets\Physic Materials\Metal.physicmaterial" />
+    <None Include="Assets\Standard Assets\Physic Materials\Rubber.physicmaterial" />
+    <None Include="Assets\Standard Assets\Physic Materials\Wood.physicmaterial" />
+    <None Include="Assets\Standard Assets\Projectors\Blob Light Projector.prefab" />
+    <None Include="Assets\Standard Assets\Projectors\Blob Shadow Projector.prefab" />
+    <None Include="Assets\Standard Assets\Projectors\Grid Projector.prefab" />
+    <None Include="Assets\Standard Assets\Projectors\Sources\Materials\Grid Material.mat" />
+    <None Include="Assets\Standard Assets\Projectors\Sources\Materials\Light Material.mat" />
+    <None Include="Assets\Standard Assets\Projectors\Sources\Materials\Shadow Material.mat" />
+    <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+    <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+    <None Include="Assets\Standard Assets\Projectors\Sources\Textures\Falloff.psd" />
+    <None Include="Assets\Standard Assets\Projectors\Sources\Textures\grid.psd" />
+    <None Include="Assets\Standard Assets\Projectors\Sources\Textures\Light.psd" />
+    <None Include="Assets\Standard Assets\Projectors\Sources\Textures\Shadow.psd" />
+    <None Include="Assets\Standard Assets\Skyboxes\DawnDusk Skybox.mat" />
+    <None Include="Assets\Standard Assets\Skyboxes\Eerie Skybox.mat" />
+    <None Include="Assets\Standard Assets\Skyboxes\MoonShine Skybox.mat" />
+    <None Include="Assets\Standard Assets\Skyboxes\Overcast1 Skybox.mat" />
+    <None Include="Assets\Standard Assets\Skyboxes\Overcast2 Skybox.mat" />
+    <None Include="Assets\Standard Assets\Skyboxes\StarryNight Skybox.mat" />
+    <None Include="Assets\Standard Assets\Skyboxes\Sunny1 Skybox.mat" />
+    <None Include="Assets\Standard Assets\Skyboxes\Sunny2 Skybox.mat" />
+    <None Include="Assets\Standard Assets\Skyboxes\Sunny3 Skybox.mat" />
+    <None Include="Assets\Standard Assets\Terrain Assets\Terrain Grass\Grass.psd" />
+    <None Include="Assets\Standard Assets\Terrain Assets\Terrain Grass\Grass2.psd" />
+    <None Include="Assets\Standard Assets\Terrain Assets\Terrain Textures\Cliff %28Layered Rock%29.psd" />
+    <None Include="Assets\Standard Assets\Terrain Assets\Terrain Textures\GoodDirt.psd" />
+    <None Include="Assets\Standard Assets\Terrain Assets\Terrain Textures\Grass %28Hill%29.psd" />
+    <None Include="Assets\Standard Assets\Terrain Assets\Terrain Textures\Grass&amp;Rock.psd" />
+    <None Include="Assets\Standard Assets\Terrain Assets\Trees Ambient-Occlusion\Palm\Materials\palmbark.mat" />
+    <None Include="Assets\Standard Assets\Terrain Assets\Trees Ambient-Occlusion\Palm\Materials\palmbranch.mat" />
+    <None Include="Assets\Standard Assets\Terrain Assets\Trees Ambient-Occlusion\Palm\Palm.fbx" />
+    <None Include="Assets\Standard Assets\Terrain Assets\Trees Ambient-Occlusion\Palm\PalmBark.psd" />
+    <None Include="Assets\Standard Assets\Terrain Assets\Trees Ambient-Occlusion\Palm\PalmBranch.psd" />
+    <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
+    <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
+    <None Include="Assets\Standard Assets\Tessellation Shaders\_Example\BumpedSpecular.mat" />
+    <None Include="Assets\Standard Assets\Tessellation Shaders\_Example\BumpedSpecularDisplacement.mat" />
+    <None Include="Assets\Standard Assets\Tessellation Shaders\_Example\BumpedSpecularSmooth.mat" />
+    <None Include="Assets\Standard Assets\Tessellation Shaders\_Example\LowPolySphere.fbx" />
+    <None Include="Assets\Standard Assets\Tessellation Shaders\_Example\_TessellationScene.unity" />
+    <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+    <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+    <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+    <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+    <None Include="Assets\Standard Assets\Toon Shading\Sources\Textures\toony lighting.psd" />
+    <None Include="Assets\Standard Assets\Toon Shading\Toony-Basic.mat" />
+    <None Include="Assets\Standard Assets\Toon Shading\Toony-BasicOutline.mat" />
+    <None Include="Assets\Standard Assets\Toon Shading\Toony-Lighted Outline.mat" />
+    <None Include="Assets\Standard Assets\Toon Shading\Toony-Lighted.mat" />
+    <None Include="Assets\Standard Assets\Toon Shading\_ToonShadingSample.unity" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Materials\BigTree_bark.mat" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Materials\BigTree_branches.mat" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Materials\BigTree_leaves.mat" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\BigTree_branches.psd" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\BigTree_leaves.psd" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\Palm Branch.psd" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\Palm Leaf Diffuse.tga" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\PalmBulb.psd" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\PalmBulb_NRM.tga" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\Pine Bark Diffuse.tga" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\ScotsPinebranches1.psd" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\ScotsPinebranches2.psd" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\ScotsPinebranches3.psd" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\ScotsPinebranches4.psd" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\ScotsPinebranches5.psd" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\ScotsPineTrunk.psd" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\SycamoreBark.psd" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\SycamoreBark_NRM.tga" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\SycamoreLeaves1.psd" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\SycamoreLeaves2.psd" />
+    <None Include="Assets\Standard Assets\Tree Creator\Sources\Textures\SycamoreLeaves3.psd" />
+    <None Include="Assets\Standard Assets\Tree Creator\Trees\BigTree.prefab" />
+    <None Include="Assets\Standard Assets\Water %28Basic%29\Daylight Simple Water.prefab" />
+    <None Include="Assets\Standard Assets\Water %28Basic%29\Nighttime Simple Water.prefab" />
+    <None Include="Assets\Standard Assets\Water %28Basic%29\Sources\Materials\Daylight Simple Water.mat" />
+    <None Include="Assets\Standard Assets\Water %28Basic%29\Sources\Materials\Nighttime Simple Water.mat" />
+    <None Include="Assets\Standard Assets\Water %28Basic%29\Sources\Objects\Materials\water plane-lambert1.mat" />
+    <None Include="Assets\Standard Assets\Water %28Basic%29\Sources\Objects\Water Plane.fbx" />
+    <None Include="Assets\Standard Assets\Water %28Basic%29\Sources\Shaders\FX-Water Simple.shader" />
+    <None Include="Assets\Standard Assets\Water %28Basic%29\Sources\Textures\nightgradient cubemap.psd" />
+    <None Include="Assets\Standard Assets\Water %28Basic%29\Sources\Textures\nightgradient.psd" />
+    <None Include="Assets\Standard Assets\Water %28Basic%29\Sources\Textures\oceangradient.psd" />
+    <None Include="Assets\Standard Assets\Water %28Basic%29\Sources\Textures\oceangradientcube.psd" />
+    <None Include="Assets\World.unity" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Standard Assets %28Mobile%29\Scripts\CameraRelativeControl.js" />
+    <Content Include="Assets\Standard Assets %28Mobile%29\Scripts\FirstPersonControl.js" />
+    <Content Include="Assets\Standard Assets %28Mobile%29\Scripts\FollowTransform.js" />
+    <Content Include="Assets\Standard Assets %28Mobile%29\Scripts\Joystick.js" />
+    <Content Include="Assets\Standard Assets %28Mobile%29\Scripts\ObliqueNear.js" />
+    <Content Include="Assets\Standard Assets %28Mobile%29\Scripts\PlayerRelativeControl.js" />
+    <Content Include="Assets\Standard Assets %28Mobile%29\Scripts\RollABall.js" />
+    <Content Include="Assets\Standard Assets %28Mobile%29\Scripts\RotationConstraint.js" />
+    <Content Include="Assets\Standard Assets %28Mobile%29\Scripts\SidescrollControl.js" />
+    <Content Include="Assets\Standard Assets %28Mobile%29\Scripts\SmoothFollow2D.js" />
+    <Content Include="Assets\Standard Assets %28Mobile%29\Scripts\tapcontrol.js" />
+    <Content Include="Assets\Standard Assets %28Mobile%29\Scripts\ZoomCamera.js" />
+    <Content Include="Assets\Standard Assets\Character Controllers\Sources\PrototypeCharacter\Textures\constructor_diffuse.png" />
+    <Content Include="Assets\Standard Assets\Character Controllers\Sources\PrototypeCharacter\Textures\constructor_normals.png" />
+    <Content Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" />
+    <Content Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\FPSInputController.js" />
+    <Content Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\PlatformInputController.js" />
+    <Content Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js" />
+    <Content Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" />
+    <Content Include="Assets\Standard Assets\Light Cookies\Flashlight.tif" />
+    <Content Include="Assets\Standard Assets\Light Cookies\Flashlight_Irregular.tif" />
+    <Content Include="Assets\Standard Assets\Light Cookies\Soft.tif" />
+    <Content Include="Assets\Standard Assets\Particles\Legacy Particles\TimedObjectDestructor.js" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\ColorFlare.png" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\fairydust.tif" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\flameA.tif" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\flameB.tif" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\flameC.tif" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\flameD.tif" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\flameE.tif" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\flametemplate.tif" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\smoke.tif" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\smoke2.tif" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\smoke3.tif" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\smoke4.tif" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\Snowflake.tif" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\soapbubble.tif" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\spark.tif" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\Star02.png" />
+    <Content Include="Assets\Standard Assets\Particles\Sources\Textures\SteamBlur.png" />
+    <Content Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
+    <Content Include="Assets\Standard Assets\Scripts\Camera Scripts\MouseOrbit.js" />
+    <Content Include="Assets\Standard Assets\Scripts\Camera Scripts\SmoothFollow.js" />
+    <Content Include="Assets\Standard Assets\Scripts\Camera Scripts\SmoothLookAt.js" />
+    <Content Include="Assets\Standard Assets\Scripts\General Scripts\DragRigidbody.js" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\DawnDusk\DawnDusk_back.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\DawnDusk\DawnDusk_down.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\DawnDusk\DawnDusk_front.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\DawnDusk\DawnDusk_left.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\DawnDusk\DawnDusk_right.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\DawnDusk\DawnDusk_up.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Eerie\Eerie_back.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Eerie\Eerie_down.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Eerie\Eerie_front.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Eerie\Eerie_left.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Eerie\Eerie_right.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Eerie\Eerie_up.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\MoonShine\MoonShine_back.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\MoonShine\MoonShine_down.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\MoonShine\MoonShine_front.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\MoonShine\MoonShine_left.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\MoonShine\MoonShine_right.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\MoonShine\MoonShine_up.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Overcast1\Overcast1_back.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Overcast1\Overcast1_down.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Overcast1\Overcast1_front.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Overcast1\Overcast1_left.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Overcast1\Overcast1_right.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Overcast1\Overcast1_up.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Overcast2\Overcast2_back.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Overcast2\Overcast2_down.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Overcast2\Overcast2_front.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Overcast2\Overcast2_left.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Overcast2\Overcast2_right.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Overcast2\Overcast2_up.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\StarryNight\StarryNight_back.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\StarryNight\StarryNight_down.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\StarryNight\StarryNight_front.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\StarryNight\StarryNight_left.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\StarryNight\StarryNight_right.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\StarryNight\StarryNight_up.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny1\Sunny1_back.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny1\Sunny1_down.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny1\Sunny1_front.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny1\Sunny1_left.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny1\Sunny1_right.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny1\Sunny1_up.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny2\Sunny2_back.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny2\Sunny2_down.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny2\Sunny2_front.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny2\Sunny2_left.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny2\Sunny2_right.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny2\Sunny2_up.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny3\Sunny3_back.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny3\Sunny3_down.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny3\Sunny3_front.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny3\Sunny3_left.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny3\Sunny3_right.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\Textures\Sunny3\Sunny3_up.tif" />
+    <Content Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+    <Content Include="Assets\Standard Assets\Tessellation Shaders\_Example\CliffRock_DISP.png" />
+    <Content Include="Assets\Standard Assets\Tessellation Shaders\_Example\CliffRock_NRM.png" />
+    <Content Include="Assets\Standard Assets\Toon Shading\Sources\Textures\toon ramp.png" />
+    <Content Include="Assets\Standard Assets\Tree Creator\Sources\Textures\BigTree_bark_diffuse.jpg" />
+    <Content Include="Assets\Standard Assets\Tree Creator\Sources\Textures\BigTree_bark_normal.jpg" />
+    <Content Include="Assets\Standard Assets\Tree Creator\Sources\Textures\Palm Bark Diffuse.png" />
+    <Content Include="Assets\Standard Assets\Tree Creator\Sources\Textures\Palm Bark Normal.png" />
+    <Content Include="Assets\Standard Assets\Tree Creator\Sources\Textures\Pine Bark Normal.png" />
+    <Content Include="Assets\Standard Assets\Tree Creator\Trees\BigTree_textures\diffuse.png" />
+    <Content Include="Assets\Standard Assets\Tree Creator\Trees\BigTree_textures\normal_specular.png" />
+    <Content Include="Assets\Standard Assets\Tree Creator\Trees\BigTree_textures\translucency_gloss.png" />
+    <Content Include="Assets\Standard Assets\Water %28Basic%29\Sources\Textures\Water fallback.jpg" />
+    <Content Include="Assets\Standard Assets\Water %28Basic%29\Sources\Textures\Waterbump.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
